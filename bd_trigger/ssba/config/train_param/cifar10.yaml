@@ -1,0 +1,20 @@
+dataset: "cifar10"
+save_folder: bd_trigger/ssba/record/cifar10
+random_seed: 0
+
+fix_fingerprint: 0
+standard_fingerprint: abcd
+fingerprint_length: 100
+
+num_epochs: 100
+batch_size: 64
+lr: 0.0001
+
+l2_loss_await: 1000
+l2_loss_weight: 10
+l2_loss_ramp: 3000
+flip_loss_await: 1000
+flip_loss_weight: 1
+flip_loss_ramp: 3000
+flip_identical: False
+BCE_loss_weight: 1

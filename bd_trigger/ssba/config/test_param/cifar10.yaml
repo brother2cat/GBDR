@@ -1,0 +1,16 @@
+dataset: cifar10
+encoder_path: bd_trigger/ssba/record/cifar10/encoder.pth
+decoder_path: bd_trigger/ssba/record/cifar10/decoder.pth
+save_folder: bd_trigger/ssba/record/cifar10
+
+fingerprint_length: 100
+batch_size: 64
+check: True
+random_seed: 0
+
+proportion: 1.0
+secret: aaaaa
+encode_method: bch
+identical_fingerprints: True
+seed: 0
+diff_bits: 0

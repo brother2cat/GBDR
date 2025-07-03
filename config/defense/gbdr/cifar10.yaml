@@ -1,0 +1,22 @@
+preprocess_model: 'lenet5'
+preprocess_epochs: 100
+isolation_ratio: 0.1
+
+adv_isolation_ratio: 0.01
+adv_finetune_epochs: 2
+lr_adv_finetune: 0.0001
+
+clean_purity_isolation_ratio: 0.01
+clean_purity_finetune_epochs: 1
+lr_clean_purity_finetune: 0.0001
+
+num_iteration_finetune: 100
+steplr_finetune_milestones: [50]
+steplr_finetune_gamma: 0.1
+
+diff_dim: 64
+diff_flash_attn: True
+diff_objective: 'pred_noise'
+diff_epochs: 100
+diff_steps_forward: 50
+diff_steps_reverse: 500
